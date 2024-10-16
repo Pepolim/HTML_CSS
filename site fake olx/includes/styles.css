@@ -1,0 +1,256 @@
+:root {
+    --main-text-color: rgb(32, 31, 31);
+    --sec-text-color: #e63c01;
+    --main-bg-color: white;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url("fonts/Roboto-Light.ttf");
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url("fonts/Roboto-Regular.ttf");
+    font-weight: bolder;
+}
+
+@font-face {
+    font-family: DMSerifDisplay;
+    src: url("fonts/DMSerifDisplay-Regular.ttf");
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: var(--main-text-color);
+    font-family: Roboto;
+    background-color: var(--main-bg-color);
+    font-size: 18px;
+}
+
+a {
+
+    text-decoration: none;
+
+    color: var(--main-text-color);
+
+}
+
+/*HEADER*/
+
+.header {
+    display: flex;
+    justify-content:flex-start;
+    gap: 30px;
+    margin-top: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+    align-items: center;
+}
+
+.header .logo{
+    height: 75px;
+}
+
+.header .search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:2px #eee solid;
+    border-radius: 50px;
+    padding: 5px;
+    gap: 10px;
+    
+}
+
+.header .search input{
+    height: 40px;
+    width: 450px;
+    border:none;
+    margin-left: 10px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.header .search input:focus{
+    outline: none;
+}
+
+.header .search .icon{
+    background: #eee;
+    padding: 10px;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .search .icon img{
+    height: 20px
+}
+
+.header .menu{
+    flex: 1;
+    display: flex;
+    gap: 50px;
+    justify-content: flex-end;
+    font-size: 23px;
+}
+
+.header .menu .op:hover {
+    color: var(--sec-text-color);
+    font-weight: bolder;
+}
+
+.header .avatar .img_Avatar{
+    height: 50px;
+}
+
+/*WELCOME MENU*/
+
+.welcome_Menu{
+    margin-top: 10px;
+    height: 600px;
+    background-position:center center;
+    background-image: url("../imgs/FinalBackground.jpeg");
+    background-size:cover;
+    background-repeat:no-repeat;
+    padding-top: 80px;
+}
+.welcome_Menu .WM_Text{
+    max-width: 350px;
+    padding-left: 100px;
+}
+
+.welcome_Menu h1{
+    color: white;
+    font-size: 70px;
+    margin: 0px;
+}
+
+.welcome_Menu p{
+    color: white;
+}
+
+.welcome_Menu button{
+    background: linear-gradient(45deg, rgba(246,85,0,1) 0%, rgba(210,54,6,1) 100%);
+    color: white;
+    border: none;
+    padding: 15px 64px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 23px;
+}
+
+.welcome_Menu button:hover{
+    background: #ce370a;
+}
+
+/*SMALL HEADER*/
+
+.Small_Header {
+    display: flex;
+    justify-content:flex-start;
+    gap: 30px;
+    margin-top: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+    align-items: center;
+}
+
+.Small_Header .Small_Menu{
+    flex: 1;
+    display: flex;
+    gap: 30px;
+    justify-content: flex-end;
+    font-size: 23px;
+    align-items: center;
+}
+
+.Small_Header .Small_Menu .icon{
+    height: 30px;
+}
+.Small_Header .Small_Menu .icon:hover{
+    transform: scale(105%);
+}
+
+/*PRODUCTS*/
+
+.products {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+    
+}
+
+.products .Prod_Display{
+    flex: 1;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 20%);
+    border-radius: 5px;
+}
+
+.products .Prod_Display:hover{
+    transform: scale(105%);
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 40%);
+}
+
+.products .thumb {
+    width: 100%;
+    height: 240px;
+    border-radius: 5px 5px 0px 0px;
+    object-fit: cover;
+}
+
+.products .PrText{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+/*FOOTER*/
+
+.footer{
+    border-top: 1px solid #a7a7a7;
+    background-color: rgb(241, 241, 241);
+    display: flex;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.footer .f_logo{
+    height: 100px;
+}
+
+.footer h1{
+    color: var(--sec-text-color);
+}
+
+.footer .f_underline p:hover{
+    text-decoration: underline;
+}
+
+.footer .icon{
+    height: 32px;
+    padding-right: 7px; 
+}
+
+.footer .icon:hover{
+    fill: #807e7e;
+}
+
+
+
+
